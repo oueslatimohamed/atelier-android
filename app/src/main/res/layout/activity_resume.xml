@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResumeActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:menu="@menu/toolbar_menu"
+        app:title="@string/app_name"
+        app:titleTextColor="@color/white"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="39dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="233dp"
+            android:layout_height="155dp"
+            app:srcCompat="@drawable/account"
+            tools:layout_editor_absoluteX="89dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <Space
+            android:layout_width="0sp"
+            android:layout_height="10sp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Android"
+            android:textColor="@color/colorPrimary"
+            android:textFontWeight="700"
+            android:textSize="18dp"
+            tools:layout_editor_absoluteX="177dp"
+            tools:layout_editor_absoluteY="202dp" />
+
+        <Space
+            android:layout_width="0sp"
+            android:layout_height="10sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="android@esprit.tn"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18dp"
+            tools:layout_editor_absoluteX="175dp"
+            tools:layout_editor_absoluteY="234dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <Button
+            android:id="@+id/skillsbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/skills"
+            tools:layout_editor_absoluteX="275dp"
+            tools:layout_editor_absoluteY="266dp" />
+
+        <Space
+            android:layout_width="10sp"
+            android:layout_height="0sp" />
+
+        <Button
+            android:id="@+id/hobbiebtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hobbies"
+            tools:layout_editor_absoluteX="59dp"
+            tools:layout_editor_absoluteY="267dp" />
+
+        <Space
+            android:layout_width="10sp"
+            android:layout_height="0sp" />
+
+        <Button
+            android:id="@+id/langbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/languages"
+            tools:layout_editor_absoluteX="167dp"
+            tools:layout_editor_absoluteY="266dp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

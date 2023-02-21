@@ -72,7 +72,7 @@ class Page2 : AppCompatActivity() {
     }
 
     private fun submit() {
-        val intent = Intent(this, Page3::class.java)
+        val intent = Intent(this, ResumeActivity::class.java)
         intent.putExtra("name", name)
         intent.putExtra("email", email)
         intent.putExtra("age", age)
