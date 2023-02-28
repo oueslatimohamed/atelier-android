@@ -1,9 +1,11 @@
 package com.esprit.diceapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
+import android.widget.SeekBar
 import android.widget.TextView
 import androidx.appcompat.widget.Toolbar
 
@@ -43,6 +45,11 @@ class ResumeActivity : AppCompatActivity() {
         findViewById<Button> (R.id.langbtn)?.setOnClickListener {
             supportFragmentManager.beginTransaction().replace(R.id.frameLayout3,LanguageFragment()).commit()
 
+        }
+
+        findViewById<Button>(R.id.careerbtn).setOnClickListener{
+            val intent = Intent(this, MyCareerActivity::class.java)
+            startActivity(intent)
         }
     }
 }

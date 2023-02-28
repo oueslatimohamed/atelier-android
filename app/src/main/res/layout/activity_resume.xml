@@ -10,14 +10,14 @@
         android:id="@+id/toolbar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:menu="@menu/toolbar_menu"
-        app:title="@string/app_name"
-        app:titleTextColor="@color/white"
         android:background="@color/colorPrimary"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/toolbar_menu"
+        app:title="@string/app_name"
+        app:titleTextColor="@color/white" />
 
     <LinearLayout
         android:id="@+id/linearLayout3"
@@ -76,7 +76,7 @@
         android:layout_marginBottom="17dp"
         android:gravity="center"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/frameLayout3"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
@@ -118,15 +118,29 @@
         android:id="@+id/frameLayout3"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="1dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="149dp"
+        app:layout_constraintBottom_toBottomOf="@id/careerbtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
 
     </FrameLayout>
+
+    <Button
+        android:id="@+id/careerbtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="40dp"
+        android:text="My carrer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout3" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
